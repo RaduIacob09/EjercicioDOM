@@ -28,6 +28,7 @@ public class Cliente {
         System.out.println("Nombre del cliente: "+nombre);
         System.out.println("Direccion del cliente: "+direccion);
         System.out.println("Telefono del cliente: "+telefono);
+        /*Esta funcion no sirve para ver los datos que tenemos*/
     }
     
     void pedirDatos(){
@@ -44,6 +45,7 @@ public class Cliente {
         
         System.out.println("Telefono: ");
         this.telefono = teclado.nextLine();
+        /*Esta funcion pide los datos al usuario */
     }
     void guardarDatos() throws IOException{
         String archivo = "archivo.txt";
@@ -54,6 +56,6 @@ public class Cliente {
         } catch (InputMismatchException e) {
             System.out.println("NO furula");
         }
-        
+        /*Y esta funcion guarda los datos en archivo.txt*/
     }
 }
