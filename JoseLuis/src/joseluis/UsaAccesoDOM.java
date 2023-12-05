@@ -9,6 +9,8 @@ public class UsaAccesoDOM {
         File f = new File("Libros.xml");//necesitamos Libros.xml en la ruta correcta
         a.abriXMLaDOM(f);
         a.recorreDOMyMuestra();
+        /*Esta clase la utilizamos para iniciar la practica y probar los metodos que se veran
+          reflejados en Libros.xml*/
     }
 
 }
