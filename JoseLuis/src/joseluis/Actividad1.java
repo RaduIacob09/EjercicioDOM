@@ -18,6 +18,8 @@ public class Actividad1 {
         String [] columnas;
         String nombre, mensaje;
         int nota1, nota2, nota3, media;
+        /*Declaro todas la variables que voy a usar. FileInputStream lo utilizo para leer el fichero
+          BufferedReader y BufferWriter los uso para leer y escribir en el archivo. */
         
         try {
             entradaDatos = new FileInputStream("alumnosNotas.txt");
@@ -36,6 +38,8 @@ public class Actividad1 {
                     
                     mensaje = "Nombre: " + nombre + ", Promedio: "+ media+"\n";
                     escrituraDatos.write(mensaje);
+                /*Este bucle no va a parar hasta que que encuentre la variable numeroLinea vacia, la variable columnas
+                  la utilizamos para separar las notas.*/
             }
             
         } catch(IOException e){
